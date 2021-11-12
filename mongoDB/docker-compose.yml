@@ -1,0 +1,10 @@
+mongodb:
+  image: mongo:4.2.3
+  container_name: mongoBD
+  environment:
+    MONGO_INITDB_ROOT_USERNAME: root
+    MONGO_INITDB_ROOT_PASSWORD: 1234
+  ports:
+    - 27017:27017
+  volumes:
+    - ./db:/data/db
